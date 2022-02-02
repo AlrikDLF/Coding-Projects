@@ -1,0 +1,166 @@
+:root {
+  --nice-purple: #9a54d3;
+  --dark-orange: #f88519;
+  --light-grey: #dbdada;
+  --white-color: #fff;
+  --soft-dark: #6d6c6c;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+header {
+  background-color: var(--soft-dark);
+  display: flex;
+}
+
+.container {
+  width: 100%;
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav ul li {
+  flex-grow: 1;
+  text-align: center;
+}
+
+nav a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--white-color);
+  display: block;
+  padding: 15px;
+}
+
+nav a:hover {
+  background-color: var(--dark-orange);
+}
+
+main {
+  flex: 1;
+  display: flex;
+  background-color: var(--light-grey);
+}
+
+section {
+  padding: 0 20px;
+}
+
+.card {
+  border-radius: 10px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.card-header {
+  background-color: var(--dark-orange);
+  color: var(--white-color);
+  border-radius: 10px 10px 0 0;
+  padding: 10px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.card-body {
+  padding: 15px;
+  color: var(--soft-dark);
+  background-color: var(--white-color);
+}
+
+.card-footer {
+  background-color: var(--dark-orange);
+  color: var(--white-color);
+  border-radius: 0 0 10px 10px;
+  padding: 5px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+footer {
+  background-color: var(--soft-dark);
+  color: var(--white-color);
+  height: 40px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+footer a {
+  color: var(--white-color);
+}
+
+footer a:hover {
+  color: var(--dark-orange);
+}
+
+/* DESKTOP */
+
+@media screen and (max-width: 800px) {
+  nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav ul li:nth-child(3) {
+    order: 1;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  section {
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    /* background-color: red; */
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--light-grey);
+    border-radius: 10px;
+    margin-bottom: 15px;
+    flex-basis: 32%;
+  }
+
+  .card-header {
+    background-color: var(--dark-orange);
+    color: var(--white-color);
+    border-radius: 10px 10px 0 0;
+    padding: 10px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .card-body {
+    padding: 15px;
+    color: var(--soft-dark);
+    flex-grow: 1;
+  }
+}
+
+.card-footer {
+  background-color: var(--dark-orange);
+  color: var(--white-color);
+  border-radius: 0 0 10px 10px;
+  padding: 5px;
+  text-transform: uppercase;
+  text-align: center;
+}

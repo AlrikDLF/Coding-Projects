@@ -1,0 +1,144 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  color: seashell;
+  background-color: black;
+  opacity: 0.9;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-size: xx-large;
+  text-shadow: 2px 2px 2px seashell;
+}
+
+h3 {
+  font-size: x-large;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  height: 69px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  display: flex;
+  height: 50px;
+  padding-left: 10px;
+  align-self: center;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  text-decoration: underline;
+}
+
+nav ul li {
+  padding: 0 12px;
+}
+
+.mission {
+  height: 700px;
+  width: 1200px;
+  background-image: url(Images/Background.webp);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.blabla {
+  text-align: center;
+  display: block;
+  line-height: 45px;
+  padding: 17px 0;
+}
+
+.teaofthemonth {
+  padding-top: 50px;
+  height: 700px;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.img {
+  height: 200px;
+  width: 300px;
+}
+
+.fallberryblitztea,
+.spicedrumtea,
+.seasonaldonuts,
+.myrtilavetea,
+.bedfordbizarretea {
+  padding: 30px 0;
+  text-align: center;
+  line-height: 40px;
+}
+
+.locations {
+  height: 600px;
+  width: 1200px;
+  background-color: red;
+  margin: 90px auto;
+  text-align: center;
+  background-image: url(Images/Locations.webp);
+  opacity: 1;
+}
+
+#title-locations {
+  padding: 40px 0 55px 0;
+  background-color: transparent;
+}
+
+.case {
+  margin: -20px 40px;
+  display: inline-block;
+  height: 300px;
+  width: 300px;
+  opacity: 1;
+}
+
+.content h3 {
+  padding: 30px 0 35px 0;
+}
+
+.p1,
+.p2 {
+  padding-bottom: 40px;
+}
+
+.p3 {
+  padding-bottom: 30px;
+}
+
+.footer {
+  margin: -60px 0 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 200px;
+  line-height: 60px;
+}
+
+.copyright {
+  padding: 0 0 30px 30px;
+}
